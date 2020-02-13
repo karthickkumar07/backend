@@ -1,0 +1,58 @@
+package com.infy.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+
+//Strictly follow class diagram
+@Entity
+@Table(name="Loan")
+public class LoanEntity {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="loan_id")
+	private Integer LoanId;
+	@Column(name="loan_amount")
+	private Double loanAmount;
+	@Column(name="interest_rate")
+	private Double interestRate;
+	private Integer term;
+	@Column(name="loan_type")
+	private String loanType;
+	public Integer getLoanId() {
+		return LoanId;
+	}
+	public void setLoanId(Integer loanId) {
+		LoanId = loanId;
+	}
+	public Double getLoanAmount() {
+		return loanAmount;
+	}
+	public void setLoanAmount(Double loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+	public Double getInterestRate() {
+		return interestRate;
+	}
+	public void setInterestRate(Double interestRate) {
+		this.interestRate = interestRate;
+	}
+	public Integer getTerm() {
+		return term;
+	}
+	public void setTerm(Integer term) {
+		this.term = term;
+	}
+	public String getLoanType() {
+		return loanType;
+	}
+	public void setLoanType(String loanType) {
+		this.loanType = loanType;
+	}
+	
+}

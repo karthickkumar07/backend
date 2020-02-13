@@ -1,0 +1,38 @@
+Valid data for sanction loan module
+{
+	"customerId":2004,
+	"loan":{"loanAmount":2000000,"loanType":"HomeLoan"}
+}
+
+
+
+Invalid data for sanction loan module
+{
+	"customerId":2004,
+	"loan":{"loanAmount":2000000,"loanType":"PersonalLoan"}
+}
+
+
+Invalid data for sanction loan module
+{
+	"customerId":2009,
+	"loan":{"loanAmount":2000000,"loanType":"HomeLoan"}
+}
+
+
+Invalid data for sanction loan module
+{
+	"customerId":2001,
+	"loan":{"loanAmount":2000000,"loanType":"HomeLoan"}
+}
+
+
+
+Valid data for get Report by report type module
+http://localhost:5564/loans/carloan
+
+
+Invalid data for get Report by report type module
+http://localhost:5564/loans/personalloan
+
+
